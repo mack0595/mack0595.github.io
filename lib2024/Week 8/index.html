@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML forms and tables</title>
+</head>
+<body>
+	<div>
+		<section>
+			<form action="somepage.php" method="get">
+					<div id="fn-container" class="form-elm">
+						<label for="FirstName">First Name</label>
+						<input type="text" name="FirstName" id="FirstName" placeholder="Enter your First Name Here">
+					</div>
+					<div id="ln-container" class="form-elm">
+						<label for="LastName">Last Name</label>
+						<input type="text" name="LastName" id="LastName" placeholder="Enter your Last Name Here">
+					</div>
+					<div id="email-container" class="form-elm">
+						<label form="email">Email</label>
+						<input type="email" name="email" id="email" value="example@g.com">
+					</div>
+					<div id="password-container" class="form-elm">
+						<label for="pass">Password</label>
+						<input type="password" name="pass" id="pass">
+					</div>
+					<div id="summary-container" class="form-elm">
+						<label for="Summary">Summary</label>
+						<textarea name="Summary" id="Summary" placeholder="Enter your Summary Here"></textarea>
+					</div>
+					<div id="Color-Dropdown-Container" class="form-elm">
+						<label for="Fav-color">Favourite Color</label>
+						<select name="Fav-color" id="Fav-color">
+							<option value="red">Red</option>
+							<option value="blue">Blue</option>
+							<option value="green">Green</option>
+						</select>
+					</div>
+					<div id="places-container" class="form-elm">
+						<label for="germany">Germany</label>
+						<input type="checkbox" name="places" id="germany" value="germany">
+						<label for="Paris">Paris</label>
+						<input type="checkbox" name="places" id="Paris" value="Paris">
+						<label for="Australia">Australia</label>
+						<input type="checkbox" name="places" id="Australia" value="Australia">
+						<label for="Iceland">
+							<input type="checkbox" name="places" id="Iceland" value="Iceland">
+							Iceland
+						</label> <br>
+					</div>
+					<div id="radio-container" class="form-elm">
+						<p>Do you like forms?</p>
+						<label for="yes">
+							<input type="radio" name="like-forms" id="yes" value="yes" checked>
+							Yes
+						</label>
+						<label for="no">
+							<input type="radio" name="like-forms" id="no" value="no">
+							No
+						</label>
+					</div>
+					<fieldset>
+						<legend>Select our free services</legend>
+						<div>
+							<label for="spam">
+								Spam me forever
+								<input type="checkbox" name="spam" id="spam" checked>
+							</label>
+							<label for="sell">
+								Sell all of my information
+								<input type="checkbox" name="sell" id="sell" checked>
+							</label>
+						</div>
+					</fieldset>
+					<div id="og-container" class="form-elm">
+						<label for="Fav-Food">Favourite Food?</label>
+						<optgroup label="Dessert">
+							<option value="cheese_cake">Cheese cake</option>
+							<option value="ice_cream">Ice cream</option>
+							<option value="pie">Pie</option>
+							<option value="choclate">Chocolate</option>
+						</optgroup>
+						<optgroup label="Lunch">
+							<option value="gc">Grilled Cheese</option>
+							<option value="pt">Poutine</option>
+							<option value="salad">Salad</option>
+						</optgroup>
+					</div>
+					<div id="st-container" class="form-elm">
+						<label for="num">Select a Number</label>
+						<input type="number" name="num" min="2" max="20"> <br>
+						<label for="ur">Input a URL</label>
+						<input type="url" name="ur" id="ur">
+						<label for="dte">Specify the date</label>
+						<input type="date" name="dte" value="dte"> <br>
+						<label for="co">Select a color</label>
+						<input type="color" name="co" id="co">
+					</div>
+					<button type="submit">Submit</button>
+					<button type="reset">Reset</button>
+			</form>
+		</section>
+	</div>
+</body>
+</html>
