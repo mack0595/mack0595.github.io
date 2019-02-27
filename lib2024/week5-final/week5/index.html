@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week 5 - Advanced HTML</title>
+</head>
+<body>
+	<!-- id is an atrribute of an element for its unique identifcation -->
+	<header id="header">
+		<h1>Week 5 - Advanced HTML</h1>
+		<!--  id="main-navigation" is used to identfity this nav element as main-navigation -->
+		<nav id="main-navigation" class="navigation">
+			<ul>
+				<!-- class attribute is used to identify elements as a group -->
+				<!-- Id can only exist for one element which means same id cannot be repeated on the same HTML page -->
+				<!-- class can be attached to multiple elements and therefore can be used more than once on a HTML page -->
+				<li id="main-li-1" class="main-li">
+					<a href="https://google.com" title="google">Link 1</a>
+				</li>
+				<li id="main-li-2" class="main-li">
+					<a href="https://lynda.com" title="lynda">Link 2</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main id="main">
+		<section id="main-section-1" class="main-section">
+			<article>
+				<div>
+					<p>This is the article</p>
+				</div>
+			</article>
+			<aside>
+				<!-- this is identified as secodnary navigation -->
+				<nav id="sub-navigation" class="navigation">
+					<ul>
+						<li>
+							<a href="https://google.com" title="google">Link 3</a>
+						</li>
+						<li>
+							<a href="https://lynda.com" title="lynda">Link 4</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+		</section>
+		<!-- ids and classes cannot have spaces i.e. 
+			id="main section 2" is incorrect 
+			therefore id must be connected by "-" main-section-1
+
+			one element can only have one id
+		 -->
+		 <!-- one elment can have multiple classes -->
+		 <!-- different classes are separated by a space 
+			Example: class="main-section container section green-text"
+		  -->
+		<section id="main-section-2" class="main-section">
+			<article>
+				<p>This is a paragraph in second section</p>
+			</article>
+		</section>
+
+		<section id="images" class="main-section">
+			<h2>Images</h2>
+			<article>
+				<!--  img tag is used to create image on a document-->
+				<!-- src is the attribute of img element that is used to specificy the location of the image that you want to render on the page -->
+				<!-- "img" is a direct sibling folder of index.html   -->
+				<!-- To access the content of "img" folder we use "/" -->
+				<!-- to specify the image we use "image-1" (name of the image file) -->
+				<!-- .jpg represents the extention or file type of that image -->
+				<!-- width attribute is used to specify the width of your rendered image, 300 means 300 pixels of the screen -->
+				<!-- height attribute is used to specifiy the height of youur rendered image. 200 menas 200 pixels of the screen -->
+				<!-- img is an example of inline element -->
+				<img src="img/image-1.jpg" alt="Image 1" width="300"  height="200">
+				<!-- alt attribute is used to specify the alternative text for an image -->
+				<!-- This is specifcially used for Screen Readers, SEO, and in case the image is broken -->
+				<!-- Note: alt attribute is required for valid html -->
+				<img src="img/image---2.jpg" alt="Image 2" width="600" height="400">
+
+				<!-- figure is an semantic tag used to display images -->
+				<!-- figure has figcaption child which is used to give proper captions to images -->
+				<figure>
+					<img src="img/image-1.jpg" alt="Image 1 in figure" width="400" height="350">
+					<figcaption>Skyline of City in Daytime</figcaption>
+				</figure>
+			</article>
+		</section>
+	</main>
+	<footer id="footer">
+		
+	</footer>
+</body>
+</html>
