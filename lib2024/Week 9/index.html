@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- html should have lang attribute, we use en-ca to declare it is Canadian English -->
+<html lang="en-ca">
+<head>
+	<meta charset="utf-8">
+	<title>Basic CSS - Week 8</title>
+</head>
+<body>
+	<!-- It is important to add classes and Ids to elements, to be able to access them via CSS -->
+	<div id="container" class="container">
+		<!-- header start -->
+		<header class="site-header">
+			<!-- img tag is used to add images -->
+			<!-- src attr is used to specify the path of the image that we are accessing  -->
+			<!-- All the path of the images are relative to your HTML document -->
+			<!-- / is used to access content inside a folder, here we use images/ to acess images inside "images" folder -->
+			<img src="images/dino-logo.png" class="logo" alt="Dino website logo">
+			<h1>Awesome Dinosaurs</h1>
+
+			<nav>
+				<ul>
+					<li>
+						<a href="contact-us.html">Contact Us</a>
+					</li>
+					<li>
+						<a href="about-us.html">About Us</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- header end -->
+
+		<main id="main" class="main">
+			<section class="content">
+				<h2>Some cool facts about Dinosaurs!</h2>
+				<p >
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu sem tempor, rutrum est eget, auctor mi. Maecenas pharetra euismod commodo. Duis lacinia semper mi non interdum. Cras accumsan laoreet libero sit amet malesuada. Integer rhoncus quam id nulla facilisis, a pharetra sem sagittis. Sed sit amet efficitur velit, eu volutpat velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus in blandit ante. Proin rutrum volutpat sem at tempor. Sed porta volutpat ornare. Etiam eget sodales velit, vitae imperdiet mauris. Vestibulum vestibulum orci nec nulla molestie molestie. Cras non dapibus lacus. Integer consequat lectus eget pharetra facilisis. Morbi dapibus consequat sodales.
+				</p>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu sem tempor, rutrum est eget, auctor mi. Maecenas pharetra euismod commodo. Duis lacinia semper mi non interdum. Cras accumsan laoreet libero sit amet malesuada. Integer rhoncus quam id nulla facilisis, a pharetra sem sagittis. Sed sit amet efficitur velit, eu volutpat velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus in blandit ante. Proin rutrum volutpat sem at tempor. Sed porta volutpat ornare. Etiam eget sodales velit, vitae imperdiet mauris. Vestibulum vestibulum orci nec nulla molestie molestie. Cras non dapibus lacus. Integer consequat lectus eget pharetra facilisis. Morbi dapibus consequat sodales.
+				</p>
+
+				<h3>Read about Dinosaurs</h3>
+				<p>
+					<!-- An element can have multiple classes separated by a space -->
+					<!-- The id for an element is unique, so it can only have one id -->
+					<a id="google-link" class="btn green" href="google.com">Google</a>
+					<a id="wiki-link" class="btn blue" href="wikipedia.com">Wikipedia</a>
+				</p>
+			</section>
+
+			<section class="some-dino">
+				<h2>Some dinosaurs</h2>
+				<ul class="dino-list">
+					<li>
+						<figure>
+							<img src="images/ancylosaurus.jpg" alt="ancylosaurus toy">
+							<figcaption>Ancylosaurus</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="images/stegosaurus.jpg" alt="stegosaurus toy">
+							<figcaption>Stegosaurus</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="images/triceratops.jpg" alt="triceratops toy">
+							<figcaption>Triceratops</figcaption>
+						</figure>
+					</li>
+				</ul>
+			</section>
+
+			<section class="fav-movie">
+				<div>
+					<h2>My favorite Dino movies</h2>
+					<dl>
+						<dt>Name</dt>
+						<dt>Jurasic World</dt>
+						<dt>Director</dt>
+						<dt>Collin Trevorrow</dt>
+						<dt>Year Released</dt>
+						<dt>2015</dt>	
+					</dl>
+				</div>
+
+				<div>
+					<h2>The Jurrassic Park Series</h2>
+					<ol>
+						<li>Jurassic Park</li>
+						<li>The Lost World</li>
+						<li>Jurassic Park 3</li>
+						<li>Jurassic World</li>
+					</ol>
+				</div>
+			</section>
+		</main>
+
+		<aside class="sidebar">
+			<section>
+				<h2 class="section-title">Other Dinos</h2>
+				<ul class="other-dino-list">
+					<li>Alberosaurus</li>
+					<li>Camptosaurus</li>
+					<li>Supersaurus</li>
+				</ul>
+			</section>
+		</aside>
+
+		<footer>
+			<!-- Structured Data Object -->
+			<!-- any element having a item* attribute is termed as structured Data element -->
+			<div itemscope itemtype="http://schema.org/Person">
+				<span itemprop="name">Winnerjit Rathor</span>
+				<div itemscope itemtype="http://schema.org/PostalAddress" itemprop="address">
+					<span itemprop="streeAddress">1385 Woodroffe Ave.</span>
+					<span itemprop="addressLocality">Ottawa</span>
+					<span itemprop="addressRegion">Ontario</span>
+					<span itemprop="addressCountry">Canada</span>
+					<span itemprop="PostalCode">K2G 1V8</span>
+				</div>
+			</div>
+			<!-- &copy; is an HTML entity that will create copy symbol when rendered by thr Browser -->
+			<p>Copyright &copy; 2019 Winnerjit Rathor</p>
+		</footer>
+	</div>
+</body>
+</html>
