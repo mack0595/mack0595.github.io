@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<section>
+		<form action="somepage.php" method="get">
+			<div id="fn-container" class="form-elm">
+				<label for="FirstName">First Name</label>
+				<input type="text" name="FirstName" id="FirstName" placeholder="Enter your First Name Here" required>
+			</div>
+			<div id="ln-container" class="form-elm">
+				<label for="LastName">Last Name</label>
+				<input type="text" name="LastName" id="LastName" placeholder="Enter your Last Name Here" required>
+			</div>
+			<div id="email-container" class="form-elm">
+				<label form="email">Email</label>
+				<input type="email" name="email" id="email" value="example@g.com">
+			</div>
+			<div id="password-container" class="form-elm">
+				<label for="pass">Password</label>
+				<input type="password" name="pass" id="pass" required>
+			</div>
+			<div id="introductory-container" class="form-elm">
+				<label for="Introduction">Introduction</label>
+				<textarea name="Introduction" id="Introduction" placeholder="Enter your Introduction Here"></textarea>
+			</div>
+			<div id="dte-container" class="form-elm">
+				<label for="dte">Enter date of Birth</label>
+				<input type="date" name="dte" value="dte" required>
+			</div>
+			<div id="phnenum-container" class="form-elm">
+				<label for="phnenum">Enter your phonenumber</label>
+				<input type="number" name="phnenum" maxlength="10">
+			</div>
+			<div id="radio-container" class="form-elm">
+				<p>What is your Gender?</p>
+				<label for="Male">
+					<input type="radio" name="Gender" id="Male" value="Male" checked>
+					Male
+				</label>
+				<label for="Female">
+					<input type="radio" name="Gender" id="Female" value="Female">
+					Female
+				</label>
+				<label for="Other">
+					<input type="radio" name="Other" id="Other" value="Other">
+					Other
+				</label>
+			</div>
+			<div id="adress-container" class="form-elm">
+				<label for="Adress">Adress</label>
+				<input type="text" name="Adress" id="Adress" placeholder="Enter your Adress Here" required>
+			</div>
+			<div id="city-container" class="form-elm">
+				<label for="City">City</label>
+				<input type="text" name="City" id="City" placeholder="Enter your City here">
+			</div>
+			<div id="Province-Dropdown-Container" class="form-elm">
+				<label for="Province">Select Province</label>
+				<select name="Province" id="Province">
+					<option value="Ontario">Ontario</option>
+					<option value="Quebec">Quebec</option>
+					<option value="BritishColumbia">British Columbia</option>
+					<option value="Manitoba">Manitoba</option>
+				</select>
+			</div>
+			<div id="Country-Dropdown-Container" class="form-elm">
+				<label for="Country">Select Country</label>
+				<select name="Country" id="Country">
+					<option value="Canada">Canada</option>
+					<option value="US">US</option>
+					<option value="Other">Other</option>
+				</select>
+			</div>
+			<div id="pc-container" class="form-elm">
+				<label for="PostalCode">Postal Code</label>
+				<input type="text" name="PostalCode" id="PostalCode" placeholder="X0X-0X0">
+			</div>
+			<div id="hobbies-container" class="form-elm">
+				<label for="sports">Sports</label>
+				<input type="checkbox" name="sports" id="sports" value="sports">
+				<label for="reading">Reading</label>
+				<input type="checkbox" name="reading" id="reading" value="reading">
+				<label for="videogames">Video Games</label>
+				<input type="checkbox" name="videogames" id="videogames" value="videogames"> <br>
+			</div>
+			<div id="url-container" class="form-elm">
+				<label for="ur">Input a URL</label>
+				<input type="url" name="ur" id="ur">
+			</div>
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</form>
+	</section>
+</body>
+</html>
